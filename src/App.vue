@@ -1,19 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app class="screen">
+    <v-main>
+      <template v-slot:default>
+        <NavigateBar/>
+        <router-view />
+      </template>
+    </v-main>
+    <div class="text-center" style="background-color: black">
+      <v-overlay :absolute="true" :opacity="0.8" :value="isLoading">
+        <v-progress-circular indeterminate size="64"></v-progress-circular>
+      </v-overlay>
+    </div>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavigateBar from "@/components/NavigateBar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavigateBar,
+  },
+};
 </script>
 
 <style>
@@ -21,8 +30,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
