@@ -1,24 +1,9 @@
-# dev-tool-final-2022
-
-## Project setup
+# วิธีติดตั้งเพื่อใช้งาน
+### 1. ขั้นตอนแรก Install Dependencies
 ```
-yarn install
+yarn install 
 ```
-
-### Compiles and hot-reloads for development
+### 2. รันคำสั่ง เพื่อเปิดการทำงาน Frontend
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

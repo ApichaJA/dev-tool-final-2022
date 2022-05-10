@@ -11,16 +11,21 @@
         <v-progress-circular indeterminate size="64"></v-progress-circular>
       </v-overlay>
     </div>
+    <footer>
+      <Footer />
+    </footer>
   </v-app>
 </template>
 
 <script>
 import NavigateBar from "@/components/NavigateBar";
+import Footer from "@/components/Footer";
 
 export default {
   name: "App",
   components: {
     NavigateBar,
+    Footer,
   },
   computed: {
     isLoading() {

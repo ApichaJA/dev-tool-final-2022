@@ -7,9 +7,9 @@ localize({
   en: {
     fields: {
       mobile: {
-        required: 'กรุณากรอก เบอร์โทรศัพท์',
-        regex: 'กรุณากรอก เบอร์โทรศัพท์ให้ถูกต้อง',
-        max: 'กรุณากรอก เบอร์โทรศัพท์ 10 หลัก',
+        required: 'กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง / Please enter your mobile number',
+        regex: 'กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง / Please enter your mobile number',
+        max: 'กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง / Please enter your mobile number',
       },
       firstName:{
         required: 'กรุณากรอก ชื่อจริง',
