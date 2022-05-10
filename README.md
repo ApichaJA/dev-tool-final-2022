@@ -7,3 +7,15 @@ yarn install
 ```
 yarn serve
 ```
+
+
+# วิธีเปิดใช้ Docker
+```
+docker-compose up -d --build
+```
+
+# เปิด Website
+```
+localhost:8080
+```
+

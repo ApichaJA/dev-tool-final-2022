@@ -4,4 +4,4 @@ services:
   frontend:
     image: devtool/frontend:1.0.0
     ports:
-      - '3001:8080'
+      - '8080:8080'
