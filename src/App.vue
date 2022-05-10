@@ -2,7 +2,7 @@
   <v-app class="screen">
     <v-main>
       <template v-slot:default>
-        <NavigateBar/>
+        <NavigateBar />
         <router-view />
       </template>
     </v-main>
@@ -21,6 +21,11 @@ export default {
   name: "App",
   components: {
     NavigateBar,
+  },
+  computed: {
+    isLoading() {
+      return this.$wait.is("app loading");
+    },
   },
 };
 </script>
